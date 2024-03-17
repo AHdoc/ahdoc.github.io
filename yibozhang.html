@@ -6,28 +6,66 @@
         body {
             font-family: monospace;
         }
+        
         .section {
-            margin-bottom: 20px;
+        	margin-left: auto;
+        	margin-right: auto;
+        	text-align: left;
+        	/* margin-bottom: 20px; */
+            
+            width: 80ch; /* Adjust the width as needed */ 
+            border: 2px solid #000; /* Border properties: thickness, style, and color */ 
+            padding: 10px; /* Add padding to create space between text and the border */ 
         }
-        .articles, .contact-directory {
-            padding-left: 20px;
+
+        h2 {
+        	overflow: hidden;
+        	text-align: center;
+        	margin-top: auto;
+        	margin-bottom: auto;
+        }
+        h2::before,
+        h2::after {
+        	background-color: #000;
+        	content: "";
+        	display: inline-block;
+        	height: 1px;
+        	position: relative;
+        	vertical-align: middle;
+        	width: 50%;
+        }
+        h2::before {
+        	right: 0.5em;
+        	margin-left: -50%;
+        }
+        h2::after {
+        	left: 0.5em;
+        	margin-right: -50%;
+        }
+
+        p {
+        	max-width: 80ch;
         }
     </style>
 </head>
+
 <body>
+<center>
 
 <h1>Yibo Zhang</h1>
 
 <div class="section">
+<left>
     Address : Université Grenoble Alpes, Institut Fourier,<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS 40700, 38058 Grenoble Cedex 9, France<br>
     Office&nbsp;: 327<br>
     Email&nbsp; : yibo.zhang@univ-grenoble-alpes.fr<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zhangyibo12342000@gmail.com<br>
+</left>
 </div>
 
 <div class="section">
-	---find me on---<br>
+	<h2>find me on</h2>
     # <a href="https://ahdoc.github.io/yibozhang">GitHub page</a>
     # <a href="https://sites.google.com/view/yibozhang">Google site</a>
     # <a href="http://arxiv.org/a/zhang_y_42">arXiv</a>
@@ -36,15 +74,21 @@
 </div>
 
 <div class="section">
-    I am a third-year PhD student at <a href="https://www-fourier.ujf-grenoble.fr">Institut Fourier</a> under the supervision of <a href="https://www-fourier.univ-grenoble-alpes.fr/%7Efunar">Louis Funar</a> and <a href="https://macbuse.github.io">Greg McShane</a>. Before coming to Grenoble, I studied at <a href="https://www.uni.lu/fstm-en/research-departments/department-of-mathematics">Université du Luxembourg</a>. Before coming to Luxembourg, I worked at <a href="https://www.accutarbio.com">Accutar Biotech</a>. Before that, I studied at <a href="https://www.fudan.edu.cn/en">Fudan University</a>.
-    <br><br>
-    A short CV is <a href="https://drive.google.com/file/d/1J76geYlrSmkoJ1cYjmIcHwkBtFIpzV9s/view?usp=drive_link">here</a>.
-    <br><br>
-    I am interested in low-dimensional topology, hyperbolic geometry, their moduli and dynamics. In particular, I focus on 3-manifolds and 4-manifolds, singular fibrations and Teichmuller theory. I am also interested in complex hyperbolic geometry, symplectic geometry and geometric group theory.
+    <p>
+    	I am a third-year PhD student at <a href="https://www-fourier.ujf-grenoble.fr">Institut Fourier</a> under the supervision of <a href="https://www-fourier.univ-grenoble-alpes.fr/%7Efunar">Louis Funar</a> and <a href="https://macbuse.github.io">Greg McShane</a>. Before coming to Grenoble, I studied at <a href="https://www.uni.lu/fstm-en/research-departments/department-of-mathematics">Université du Luxembourg</a>. Before coming to Luxembourg, I worked at <a href="https://www.accutarbio.com">Accutar Biotech</a>. Before that, I studied at <a href="https://www.fudan.edu.cn/en">Fudan University</a>.
+    </p>
+
+    <p>
+    	A short CV is <a href="https://drive.google.com/file/d/1J76geYlrSmkoJ1cYjmIcHwkBtFIpzV9s/view?usp=drive_link">here</a>.
+    </p>
+    
+    <p>
+    	I am interested in low-dimensional topology, hyperbolic geometry, their moduli and dynamics. In particular, I focus on 3-manifolds and 4-manifolds, singular fibrations and Teichmuller theory. I am also interested in complex hyperbolic geometry, symplectic geometry and geometric group theory.
+    </p>
 </div>
 
 <div class="section">
-    ---articles---<br>
+	<h2>articles</h2>
     # Holomorphic Curves in Moduli Spaces Are Quasi-Isometrically Immersed<br>
     &nbsp;&nbsp;30p., <a href="https://arxiv.org/abs/2401.09327">arXiv:2401.09327</a>;
                 28p., <a href="https://ahdoc.github.io/math_doc/Holomorphic_fibrations.pdf">latest version</a>.
@@ -55,7 +99,8 @@
 </div>
 
 <div class="section">
-    ---something else---<br>
+	<h2>something else</h2>
+
     # Master's thesis <a href="https://drive.google.com/file/d/1Ln8a943QLKZ0ZZ0nQ9dF0NXyvBx8__Fg/view?usp=drive_link">Random Walks and Flows on Hyperbolic Surfaces</a><br>
     &nbsp;supervised by <a href="https://math.uni.lu/schlenker">Jean-Marc Schlenker</a> and <a href="https://sites.google.com/site/souravghoshbagui">Sourav Ghosh</a><br>
     # Notes on <a href="https://drive.google.com/file/d/1u6Z4bYNVwmlQiK3DwAXRBrlFkv6j3mU8/view?usp=drive_link">Triangulations of the Ball and Hyperbolic Geometry</a><br>
@@ -63,7 +108,7 @@
 </div>
 
 <div class="section">
-    ---bookmarks---<br>
+	<h2>bookmarks</h2>
     # <a href="https://www-fourier.ujf-grenoble.fr">IF</a><br>
     # <a href="https://arxiv.org/list/math.GT/recent">arXiv math.GT recent</a><br>
     # <a href="https://researchseminars.org">researchseminars.org</a><br>
@@ -71,7 +116,7 @@
 </div>
 
 <div class="section">
-    ---contact directory---<br>
+    <h2>contact directory</h2>
     B: <a href="https://www-fourier.univ-grenoble-alpes.fr/~boulanju">Julien BOULANGER</a>;
        <a href="https://www-fourier.univ-grenoble-alpes.fr/%7Ebesson">Gérard BESSON</a>;
        <a href="https://www.imo.universite-paris-saclay.fr/~yves.benoist">Yves BENOIST</a>;<br>
@@ -93,5 +138,7 @@
     Z: <a href="https://byzhang.cn">Bingyu ZHANG</a>;<br>
 </div>
 
+</center>
 </body>
+
 </html>
