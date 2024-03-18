@@ -2,13 +2,10 @@
     <head>
       <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
       <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-      <py-env>
-        - paths:
-          - ./main.py
-      </py-env>
+      <title>A+B Problem</title>
     </head>
   <body>
-    <h1>This page uses pyscript. (2024-03-16 at 1:44)</h1>
+    <h1>This page uses pyscript. (2024-03-18 at 1:44)</h1>
     ---Input two integers and then press OK---
     <br>
     <input type="number" id="a"/>
@@ -17,8 +14,6 @@
     <p>Output:</p>
     <div id="c"></div>
 
-    <py-script>
-      from main import solve
-    </py-script>
+    <py-script scr="./main.py"></py-script>
   </body>
 </html>
