@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="education" class="section">
+            <div class="left-side">
+                <img src="figures/Saint-Eynard.jpg" alt="Saint-Eynard">
+            </div>
+            <div class="right-side">
+
+<p>
+    I am interested in low-dimensional topology, hyperbolic geometry, their moduli and dynamics. In particular, I focus on 3-manifolds and 4-manifolds, singular fibrations and Teichmuller theory. I am also interested in complex hyperbolic geometry, symplectic geometry and geometric group theory.
+</p>
+
+<h2>articles</h2>
+# Holomorphic Curves in Moduli Spaces Are Quasi-Isometrically Immersed<br>
+&nbsp;&nbsp;30p., <a href="https://arxiv.org/abs/2401.09327">arXiv:2401.09327</a>;
+            28p., <a href="https://drive.google.com/file/d/1WsR0S77vQ5V_le2Uuy6MFRKN9wUPsjn_/view?usp=drive_link">latest version</a>.
+<br>
+# Classification of Torus Fibrations Over S^2 Up to Fibre Sum Stabilisation<br>
+&nbsp;&nbsp;42p., <a href="https://arxiv.org/abs/2304.09562">arXiv:2304.09562</a>.
+<br>
+
+
+<h2>something else</h2>
+# Master's thesis <a href="https://drive.google.com/file/d/1Ln8a943QLKZ0ZZ0nQ9dF0NXyvBx8__Fg/view?usp=drive_link">Random Walks and Flows on Hyperbolic Surfaces</a><br>
+&nbsp;supervised by <a href="https://math.uni.lu/schlenker">Jean-Marc Schlenker</a> and <a href="https://sites.google.com/site/souravghoshbagui">Sourav Ghosh</a><br>
+# Notes on <a href="https://drive.google.com/file/d/1u6Z4bYNVwmlQiK3DwAXRBrlFkv6j3mU8/view?usp=drive_link">Triangulations of the Ball and Hyperbolic Geometry</a><br>
+# Notes on <a href="https://drive.google.com/file/d/1jAEqDg7Q-Z1H5Slsc-RhNYNAOqvYvzIr/view?usp=drive_link">Triangles and Tiling Groups</a><br>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="footer-container"></div>
+</body>
+</html>

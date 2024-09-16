@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>me - Yibo ZHANG</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <!-- About Me Section -->
+    <div class="container">
+        <section id="about" class="section">
+            <div class="left-side">
+                <img src="figures/chamechaude.jpg" alt="Chamechaude">
+            </div>
+            <div class="right-side">
+
+Address : Université Grenoble Alpes, Institut Fourier,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CS 40700, 38058 Grenoble Cedex 9, France<br>
+Office&nbsp;: 327<br>
+Email&nbsp; : yibo.zhang@univ-grenoble-alpes.fr<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zhangyibo12342000@gmail.com<br>
+
+<p>
+    Currently, I am a post-doc at <a href="https://www-fourier.ujf-grenoble.fr">Institut Fourier</a>.
+</p>
+
+<p>
+    I defended my PhD on April 5th, 2024 (<a href="https://ahdoc.github.io/math_doc/thesis.pdf">thesis</a>;
+    <a href="https://ahdoc.github.io/math_doc/defense.pdf">slides</a>) at <a href="https://www-fourier.ujf-grenoble.fr">Institut Fourier</a> in Grenoble under the supervision of <a href="https://www-fourier.univ-grenoble-alpes.fr/%7Efunar">Louis Funar</a> and <a href="https://macbuse.github.io">Greg McShane</a>. Before coming to Grenoble, I studied at <a href="https://www.uni.lu/fstm-en/research-departments/department-of-mathematics">Université du Luxembourg</a>. Before coming to Luxembourg, I worked at <a href="https://www.accutarbio.com">Accutar Biotech</a>. Before that, I studied at <a href="https://www.fudan.edu.cn/en">Fudan University</a>.
+</p>
+
+<p>
+    A short CV is <a href="https://drive.google.com/file/d/1J76geYlrSmkoJ1cYjmIcHwkBtFIpzV9s/view?usp=drive_link">here</a>.
+</p>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="footer-container"></div>
+</body>
+</html>

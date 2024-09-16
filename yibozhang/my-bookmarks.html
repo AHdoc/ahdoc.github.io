@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+    </script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="projects" class="section">
+            <div class="left-side">
+                <img src="figures/Les7Laux.jpg" alt="Les 7 Laux">
+            </div>
+            <div class="right-side">
+
+<h2>bookmarks</h2>
+# <a href="https://www-fourier.ujf-grenoble.fr">IF</a><br>
+# <a href="https://arxiv.org/list/math.GT/recent">arXiv math.GT recent</a><br>
+# <a href="https://researchseminars.org">researchseminars.org</a><br>
+# <a href="https://www-fourier.univ-grenoble-alpes.fr/seminaire-gg/?q=seances">Le séminaire virtuel francophone Groupes et Géométrie</a><br>
+
+<h2>contact directory</h2>
+B: <a href="https://www-fourier.univ-grenoble-alpes.fr/~boulanju">Julien BOULANGER</a>;
+   <a href="https://www-fourier.univ-grenoble-alpes.fr/%7Ebesson">Gérard BESSON</a>;
+   <a href="https://www.imo.universite-paris-saclay.fr/~yves.benoist">Yves BENOIST</a>;<br>
+D: <a href="https://www-fourier.univ-grenoble-alpes.fr/%7Ederaux">Martin DERAUX</a>;
+   <a href="https://www-fourier.univ-grenoble-alpes.fr/~dahmani">François DAHMANI</a>;<br>
+E: <a href="https://hlovisiennes.github.io/website/">Henrique ENNES</a>;<br>
+F: <a href="https://www-fourier.ujf-grenoble.fr/~funar">Louis FUNAR</a>;<br>
+G: <a href="https://sites.google.com/site/souravghoshbagui">Sourav GHOSH</a>;<br>
+L: <a href="https://www-fourier.ujf-grenoble.fr/~lanneau">Erwan LANNEAU</a>;
+   <a href="https://www.math.stonybrook.edu/cards/leemyeongjae.html">Myeongjae LEE</a>;<br>
+M: <a href="https://macbuse.github.io">Greg MCSHANE</a>;
+   <a href="https://sites.google.com/site/pagewebdedelphinemoussard/">Delphine MOUSSARD</a>;<br>
+Q: <a href="https://imag.umontpellier.fr/~quint">Jean-François QUINT</a>;<br>
+S: <a href="https://math.uni.lu/schlenker">Jean-Marc SCHLENKER</a>;
+   <a href="https://seppi.perso.math.cnrs.fr/index.html">Andrea SEPPI</a>;
+   <a href="https://www.macs.hw.ac.uk/~as2000">Alessandro SISTO</a>;<br>
+X: <a href="https://sites.google.com/site/mathbinbin">Binbin XU</a>;
+   <a href="https://sites.google.com/view/mengmengxu">Mengmeng XU</a>;<br>
+Z: <a href="https://byzhang.cn">Bingyu ZHANG</a>;<br>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="footer-container"></div>
+
+</body>
+</html>
